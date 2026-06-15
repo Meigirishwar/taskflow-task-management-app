@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TaskFlow Dashboard</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="container">
+
+        <h1>📋 TaskFlow</h1>
+
+        <p>Manage your daily tasks efficiently</p>
+
+    <button class="logout-btn" onclick="logout()">Logout</button>
+
+        <br><br>
+
+        <div class="task-input">
+
+            <input type="text"
+                   id="taskInput"
+                   placeholder="Task Title">
+
+            <select id="priority">
+                <option value="Low">Low</option>
+                <option value="Medium">Medium</option>
+                <option value="High">High</option>
+            </select>
+
+            <input type="date" id="dueDate">
+
+            <button onclick="addTask()">Add Task</button>
+
+        </div>
+<h3 id="taskCount">Total Tasks: 0</h3>
+        <ul id="taskList"></ul>
+
+    </div>
+
+    <script src="auth.js"></script>
+    <script src="script.js"></script>
+
+</body>
+</html>
